@@ -5,19 +5,181 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>Git Test </title>
-<link rel="stylesheet" href="W6_github.css">
-<link rel="stylesheet" href="">
+<title>Walk walk baby 🌍 </title>
+</head>
 
-<h1>Git Test</h1>
-<form>
-    <input type="email" placeholder="Enter your email">
-    <input type="password" placeholder="Enter your password">
-    <input type="submit" placeholder="Login">
+<style>
+    body {
+        background: linear-gradient(to top, #3ca2c5 0%, #e0ecf1 100%)
+    }
 
-</form>
+    body.dark {
+        background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
+        ;
+    }
 
-<script src="W6_github.js"></script>
+    h1,
+    h2 {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: rgb(58, 57, 57);
+    }
 
 
-</html
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align-last: auto;
+    }
+
+    button:hover {
+        background-color: 86bfd162;
+        cursor: grabbing;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+    }
+
+    .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px
+    }
+
+
+    .grid img:hover {
+        transform: scale(2);
+    }
+
+    .grid img {
+        border-radius: 10px;
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+        width: 100%;
+    }
+
+    .darkbutton {
+        font-size: 12px;
+        background-color: black;
+        color: white;
+    }
+
+    .darkbutton:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .Container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 30px 60px;
+        border-radius: 7px;
+        background: linear-gradient(to top, #fff1eb 0%, #bedceb 100%);
+    }
+
+    .img-link {
+        max-width: 100%;
+        transition: 150ms ease-in-out;
+        border-radius: 10px;
+    }
+
+    .img-link:hover {
+        filter: contrast(50%);
+        transform: scale(1.2);
+    }
+
+
+
+    .dark .Container {
+        background: rgb(155, 154, 154);
+        color: white;
+    }
+
+    .dark .darkbutton {
+        background: white;
+        color: black;
+
+    }
+
+    .dark footer {
+        color: white;
+    }
+
+    footer {
+        text-align: center;
+        margin: 10px 0px;
+        font-size: 20px;
+        font-family: fantasy;
+    }
+</style>
+
+<body>
+    <button class="darkbutton"> Change theme 👀</button>
+
+    <div class="Container">
+        <h1>WALKING OUTSIDE</h1>
+        <h2><em> A great way to boost your physical and mental wellbeing</em>🤓</h2>
+
+        <a href="https://en.wikipedia.org/wiki/Walking" target="_blank">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/461/original/walk1.jpeg?1719343514
+			" alt="" class="img-link" /> </a>
+
+        <div class="grid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/464/original/walk2.jpeg?1719343588
+" alt="" />
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/466/original/walk4.jpeg?1719343655
+" alt="" />
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/463/original/walk3.jpeg?1719343580
+" alt="" />
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/472/original/walk55.jpeg?1719346582"
+                alt="" />
+        </div>
+        <p>
+            Walking is a great way to improve or maintain your overall health. Just 30 minutes every day can
+            increase
+            cardiovascular fitness, strengthen bones, reduce excess body fat, and boost muscle power and endurance.
+            Walking for 30 minutes a day or more on most days of the week is a great way to improve or maintain your
+            overall
+            health.
+        </p>
+        <button>
+            Start walking
+        </button>
+    </div>
+    <footer>Coded by <a href=" https://www.linkedin.com/in/gulcinparmentier/" target="_blank"
+            style="text-decoration: none; color:inherit"> Gülçin Parmentier</a>
+    </footer>
+
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+            if
+                (body.classList.contains("dark")) {
+                (body.classList.remove("dark"))
+            }
+            else {
+                body.classList.add("dark");
+            }
+
+        }
+
+
+        let darkbutton = document.querySelector(".darkbutton");
+        darkbutton.addEventListener("click", changeTheme);
+
+
+    </script>
+
+</body>
+
+</html>
